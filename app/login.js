@@ -52,7 +52,15 @@ export default function Login() {
       <TouchableOpacity>
         <Text style={styles.olvido}>¿Olvidaste tu contraseña?</Text>
       </TouchableOpacity>
+
+
+      <TouchableOpacity style={styles.botonIniciar}>
+    <Text style={styles.textoBoton}>Iniciar sesión</Text>
+    </TouchableOpacity>
+
     </View>
+
+    
   );
 }
 const styles = StyleSheet.create({
@@ -112,4 +120,24 @@ const styles = StyleSheet.create({
       fontSize: 18,
       textDecorationLine: 'underline',
     },
+    botonIniciar: {
+  backgroundColor: '#ff4b2b',
+  borderRadius: 25,
+  paddingVertical: 12,
+  paddingHorizontal: 50,
+  marginTop: 20,
+  elevation: 4,
+  shadowColor: '#000',
+  shadowOffset: { width: 0, height: 2 },
+  shadowOpacity: 0.25,
+  shadowRadius: 4,
+  alignItems: 'center',
+},
+textoBoton: {
+  color: '#fff',
+  fontSize: 18,
+  fontFamily: 'Fredoka',
+  textAlign: 'center',
+},
+
   });
